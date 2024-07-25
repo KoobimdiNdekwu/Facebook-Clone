@@ -7,5 +7,5 @@ function settingsMenuToggle() {
 }
 
 darkBtn.onclick = function() {
-    darkBtn.classList.toggle("dark-btn")
+    darkBtn.classList.toggle("dark-btn");
 }
