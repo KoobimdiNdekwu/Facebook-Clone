@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlaqueBook</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/BlaqueBook.png">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navigation content section -->
+    <nav>
+        <div class="nav-left">
+            <img src="images/BlaqueBook.png" alt="Logo" class="logo">
+            <ul>
+                <li><img src="images/notification.png" alt=""></li>
+                <li><img src="images/inbox.png" alt=""></li>
+                <li><img src="images/video.png" alt=""></li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="images/search.png" alt="">
+                <input type="text" placeholder="Search">
+            </div>
+
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="images/Mia.png" alt="">
+            </div>
+        </div>
+
+        <!-- Settings/Dropdown Menu -->
+        <div class="settings-menu">
+            <div id="dark-btn">
+                <span></span>
+            </div>
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="images/Mia.png" width="120px">
+                    <div>
+                        <p>Ama Mia</p>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="user-profile">
+                    <img src="images/feedback.png" width="120px">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us improve the design.</a>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="setting-links">
+                    <img src="images/setting.png" class="settings-icon">
+                    <a href="#">Settings & Privacy <img src="images/arrow.png" width="7px"></a>
+                </div>
+
+                <div class="setting-links">
+                    <img src="images/help.png" class="settings-icon">
+                    <a href="#">Help & Support<img src="images/arrow.png" width="7px"></a>
+                </div>
+
+                <div class="setting-links">
+                    <img src="images/display.png" class="settings-icon">
+                    <a href="#">Display & Accessibility<img src="images/arrow.png" width="7px"></a>
+                </div>
+
+                <div class="setting-links">
+                    <img src="images/logout.png" class="settings-icon">
+                    <a href="#">Logout<img src="images/arrow.png" width="7px"></a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Body content with 3 sections -->
+    <div class="container">
+        <!-- Left Sidebar -->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="images/news.png" alt="">Latest News</a>
+                <a href="#"><img src="images/friends.png" alt="">Friends</a>
+                <a href="#"><img src="images/group.png" alt="">Groups</a>
+                <a href="#"><img src="images/marketplace.png" alt="">Market Place</a>
+                <a href="#"><img src="images/watch.png" alt="">Watch</a>
+                <a href="#">See More</a>
+            </div>
+
+            <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href="#"><img src="images/shortcut-1.png" alt="">Web Developers</a>
+                <a href="#"><img src="images/shortcut-2.png" alt="">Web Design Course</a>
+                <a href="#"><img src="images/shortcut-3.png" alt="">Full Stack Development</a>
+                <a href="#"><img src="images/shortcut-4.png" alt="">Website Experts</a>
+            </div>
+        </div>
+
+
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Story section -->
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="images/upload.png" alt="">
+                    <p>Post Story</p>
+                </div>
+
+                <div class="story story2">
+                    <img src="images/member-1.png" alt="">
+                    <p>Kerry</p>
+                </div>
+
+                <div class="story story3">
+                    <img src="images/member-2.png" alt="">
+                    <p>Ugonna</p>
+                </div>
+
+                <div class="story story4">
+                    <img src="images/member-3.png" alt="">
+                    <p>Pekkalah</p>
+                </div>
+
+                <div class="story story5">
+                    <img src="images/member-4.png" alt="">
+                    <p>Liquid</p>
+                </div>
+            </div>
+
+            <!-- Write Post section -->
+            <div class="write-post-container">
+
+                <!-- User Profile -->
+                <div class="user-profile">
+                    <img src="images/Mia.png" width="120px">
+                    <div>
+                        <p>Ama Mia</p>
+                        <small>Public <i class="fas fa-caret-down"></i></small>
+                    </div>
+                </div>
+
+                <!-- Post Input -->
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="What is on your mind, Mia?"></textarea>
+
+                    <div class="add-post-links">
+                        <a href="#"><img src="images/live-video.png" alt="">Live Video</a>
+                        <a href="#"><img src="images/photo.png" alt="">Photo/Video</a>
+                        <a href="#"><img src="images/feeling.png" alt="">Feeling/Activity</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/Mia.png" width="120px">
+                        <div>
+                            <p>Ama Mia</p>
+                            <span>February 14 2020, 04:20 pm <i class="fas fa-caret-down"></i></span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-caret-down"></i></a>
+                </div>
+                <p class="post-text">For stunning web designs, contact <span>Mormont</span>. We got you covered! <a href="#">#Mormont Technologies</a> <a href="#">@LordMormont</a></p>
+                <img src="images/feed-image-1.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png" alt="">120</div>
+                        <div><img src="images/comments.png" alt="">58</div>
+                        <div><img src="images/share.png" alt="">74</div>
+                    </div>
+
+                    <div class="post-profile-icon">
+                        <img src="images/Mia.png" alt=""><i class="fas fa-caret-down"></i> <i class="fa-solid fa-sort-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/Mia.png" width="120px">
+                        <div>
+                            <p>Ama Mia</p>
+                            <span>February 18 2020, 02:44 am <i class="fas fa-caret-down"></i></span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-caret-down"></i></a>
+                </div>
+                <p class="post-text">In all we do, we have your best interest at heart. Speaking website? <span>Speak Mormont!</span> We got you covered! <a href="#">#Mormont Technologies</a> <a href="#">@LordMormont</a></p>
+                <img src="images/feed-image-2.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png" alt="">208</div>
+                        <div><img src="images/comments.png" alt="">73</div>
+                        <div><img src="images/share.png" alt="">145</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/Mia.png" alt=""><i class="fas fa-caret-down"></i> <i class="fa-solid 
+            fa-sort-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/Mia.png" width="120px">
+                        <div>
+                            <p>Ama Mia</p>
+                            <span>February 22 2020, 11:40 am <i class="fas fa-caret-down"></i></span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-caret-down"></i></a>
+                </div>
+                <p class="post-text">Where we go, great web designs go. One-stop web solutions. Always . . . <span>The Mormont Team!</span> We got you covered! <a href="#">#Mormont Technologies</a> <a href="#">@LordMormont</a></p>
+                <img src="images/feed-image-3.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png" alt="">114</div>
+                        <div><img src="images/comments.png" alt="">66</div>
+                        <div><img src="images/share.png" alt="">95</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/Mia.png" alt=""><i class="fas fa-caret-down"></i> <i class="fa-solid 
+            fa-sort-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/Mia.png" width="120px">
+                        <div>
+                            <p>Ama Mia</p>
+                            <span>February 24 2020, 03:47 pm <i class="fas fa-caret-down"></i></span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-caret-down"></i></a>
+                </div>
+                <p class="post-text">We are delighted to announce the coming of a new dawn. With the introduction of <span>Lyanna Mormont Scholarship Programme</span>, we aim to see more excellence in the tech industry. Be a Techie! <a href="#">#Mormont Technologies</a>
+                    <a href="#">@LordMormont</a>
+                </p>
+                <img src="images/feed-image-4.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png" alt="">153</div>
+                        <div><img src="images/comments.png" alt="">106</div>
+                        <div><img src="images/share.png" alt="">139</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/Mia.png" alt=""><i class="fas fa-caret-down"></i> <i class="fa-solid 
+            fa-sort-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/Mia.png" width="120px">
+                        <div>
+                            <p>Ama Mia</p>
+                            <span>February 27 2020, 06:33 pm <i class="fas fa-caret-down"></i></span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-caret-down"></i></a>
+                </div>
+                <p class="post-text">Do not relent in your pursuit for <span>Happiness!</span> We got you covered! <a href="#">#Mormont Technologies</a> <a href="#">@LordMormont</a></p>
+                <img src="images/feed-image-5.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png" alt="">142</div>
+                        <div><img src="images/comments.png" alt="">121</div>
+                        <div><img src="images/share.png" alt="">77</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/Mia.png" alt=""><i class="fas fa-caret-down"></i> <i class="fa-solid fa-sort-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="load-more">Load More</button>
+
+        </div>
+
+
+
+
+        <!-- Right Sidebar -->
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>24</h3>
+                    <span>April</span>
+                </div>
+
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p><i class="fas fa-map-market-alt"></i> Delta State ICT Hub</p>
+                    <a href="#">More info</a>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>May</span>
+                </div>
+                <div class="right-event">
+                    <h4>Poetry Contest</h4>
+                    <p><i class="fas fa-map-market-alt"></i> Mormont Creative Arts</p>
+                    <a href="#">More info</a>
+                </div>
+            </div>
+            <!-- Advertisement -->
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="images/advertisement.png" alt="" class="sidebar-ads">
+
+            <!-- Conversations -->
+            <div class="sidebar-title">
+                <h4>Conversations</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-1.png" alt="">
+                </div>
+                <p>Kerry Anakwenze</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-2.png" alt="">
+                </div>
+                <p>Ugonna Ejeagwu</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-3.png" alt="">
+                </div>
+                <p>Serrafina Pekkalah</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-4.png" alt="">
+                </div>
+                <p>Liquid Ocelot</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Copyright 2024 - BlaqueBook of Mormont</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
